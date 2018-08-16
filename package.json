@@ -1,0 +1,19 @@
+{
+  "name": "@soluzioni-futura/eslint-config-soluzioni-futura",
+  "version": "1.0.0",
+  "description": "The Soluzioni Futura eslint configuration",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/SoluzioniFutura/eslint-config-soluzioni-futura.git"
+  },
+  "author": "Soluzioni Futura",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SoluzioniFutura/eslint-config-soluzioni-futura/issues"
+  },
+  "homepage": "https://github.com/SoluzioniFutura/eslint-config-soluzioni-futura#readme",
+  "dependencies": {
+    "babel-eslint": "^8.2.6"
+  }
+}
