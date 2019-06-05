@@ -12,12 +12,12 @@ module.exports = {
   },
   rules: {
     "comma-dangle": ["warn", "never"],
-    "comma-spacing": ["error", { "before": false, "after": true }],
+    "comma-spacing": ["error", { before: false, after: true }],
     indent: ["error", 2, {
-      "MemberExpression": 1,
-      "SwitchCase": 1
+      MemberExpression: 1,
+      SwitchCase: 1
     }],
-    "no-empty": ["error", { "allowEmptyCatch": true }],
+    "no-empty": ["error", { allowEmptyCatch: true }],
     "no-multiple-empty-lines": ["error"],
     "no-new-symbol": "error",
     "no-undef": ["error"],
@@ -30,6 +30,10 @@ module.exports = {
     semi: ["error", "never"],
     "space-in-parens": ["error", "never"],
     "array-bracket-spacing": ["error", "never"],
-    "space-infix-ops": ["error"]
+    "space-infix-ops": ["error"],
+    curly: ["error"],
+    "brace-style": ["error", "1tbs", { allowSingleLine: false }],
+    "keyword-spacing": ["error", { before: true, after: true }],
+    "quote-props": ["error", "as-needed"]
   }
 }
