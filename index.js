@@ -34,6 +34,9 @@ module.exports = {
     curly: ["error"],
     "brace-style": ["error", "1tbs", { allowSingleLine: false }],
     "keyword-spacing": ["error", { before: true, after: true }],
-    "quote-props": ["error", "as-needed"]
+    "quote-props": ["error", "as-needed"],
+    "arrow-spacing": ["error"],
+    "space-before-blocks": ["error", "always"],
+    "spaced-comment" : ["error", "always"]
   }
 }
