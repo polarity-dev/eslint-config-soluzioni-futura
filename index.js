@@ -42,5 +42,53 @@ module.exports = {
     "space-before-function-paren": ["error", "never"],
     eqeqeq: ["warn", "always"],
     "key-spacing": ["error", { mode: "strict" }]
-  }
+  },
+  overrides: [
+    {
+      files: ["*.ts", "*.tsx"],
+      rules: {
+        "@typescript-eslint/type-annotation-spacing": "error",
+        "no-unused-vars": ["off"],
+        "@typescript-eslint/no-unused-vars": ["warn"],
+        "@typescript-eslint/await-thenable": "error",
+        "@typescript-eslint/ban-types": [
+          "error",
+          {
+            types: {
+              any: {},
+              unknown: {}
+            }
+          }
+        ],
+        "@typescript-eslint/no-explicit-any": "error",
+        "@typescript-eslint/no-unsafe-return": "error",
+        "@typescript-eslint/explicit-function-return-type": "error",
+        "@typescript-eslint/consistent-type-assertions": "error",
+        "@typescript-eslint/class-literal-property-style": "error",
+        "@typescript-eslint/no-floating-promises": "error",
+        "@typescript-eslint/typedef": "error",
+        "@typescript-eslint/member-delimiter-style": ["error", {
+          multiline: {
+            delimiter: "comma",
+            requireLast: false
+          },
+          singleline: {
+            delimiter: "comma",
+            requireLast: false
+          }
+        }]
+      },
+      env: {
+        node: true
+      },
+      parser: "@typescript-eslint/parser",
+      plugins: [
+        "@typescript-eslint"
+      ],
+      parserOptions: {
+        sourceType: "module",
+        project: "./tsconfig.json"
+      }
+    }
+  ]
 }

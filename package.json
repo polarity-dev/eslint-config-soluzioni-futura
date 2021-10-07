@@ -1,22 +1,22 @@
 {
   "name": "@soluzioni-futura/eslint-config-soluzioni-futura",
-  "version": "1.4.0",
+  "version": "2.0.0",
   "description": "The Soluzioni Futura eslint configuration",
   "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/SoluzioniFutura/eslint-config-soluzioni-futura.git"
   },
-  "author": "Soluzioni Futura",
+  "author": "Soluzioni Futura <info@soluzionifutura.it>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/SoluzioniFutura/eslint-config-soluzioni-futura/issues"
   },
   "homepage": "https://github.com/SoluzioniFutura/eslint-config-soluzioni-futura#readme",
   "dependencies": {
-    "babel-eslint": "^10.1.0"
-  },
-  "devDependencies": {
-    "eslint": "^7.16.0"
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0"
   }
 }
