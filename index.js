@@ -5,10 +5,11 @@ module.exports = {
     browser: true,
     es6: true
   },
-  parser: "babel-eslint",
+  parser: "@babel/eslint-parser",
   parserOptions: {
     ecmaVersion: 2017,
-    sourceType: "module"
+    sourceType: "module",
+    requireConfigFile: false
   },
   rules: {
     "comma-dangle": ["warn", "never"],
