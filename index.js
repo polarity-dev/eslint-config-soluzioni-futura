@@ -12,45 +12,42 @@ module.exports = {
     requireConfigFile: false
   },
   rules: {
+    "array-bracket-spacing": ["error", "never"],
+    "arrow-spacing": ["error"],
+    "brace-style": ["error", "1tbs", { allowSingleLine: false }],
     "comma-dangle": ["warn", "never"],
     "comma-spacing": ["error", { before: false, after: true }],
+    curly: ["error"],
+    eqeqeq: ["warn", "always"],
     indent: ["error", 2, {
       MemberExpression: 1,
       SwitchCase: 1
     }],
+    "key-spacing": ["error", { mode: "strict" }],
+    "keyword-spacing": ["error", { before: true, after: true }],
+    "no-console": ["warn"],
     "no-empty": ["error", { allowEmptyCatch: true }],
     "no-multiple-empty-lines": ["error"],
     "no-new-symbol": "error",
+    "no-trailing-spaces": ["error"],
     "no-undef": ["error"],
     "no-unused-vars": ["warn"],
-    "no-console": ["warn"],
     "object-curly-spacing": ["error", "always"],
     "object-shorthand": "error",
     "prefer-const": 2,
+    "quote-props": ["error", "as-needed"],
     quotes: ["error", "double"],
     semi: ["error", "never"],
-    "space-in-parens": ["error", "never"],
-    "array-bracket-spacing": ["error", "never"],
-    "space-infix-ops": ["error"],
-    curly: ["error"],
-    "brace-style": ["error", "1tbs", { allowSingleLine: false }],
-    "keyword-spacing": ["error", { before: true, after: true }],
-    "quote-props": ["error", "as-needed"],
-    "arrow-spacing": ["error"],
     "space-before-blocks": ["error", "always"],
-    "spaced-comment": ["error", "always"],
-    "no-trailing-spaces": ["error"],
     "space-before-function-paren": ["error", "never"],
-    eqeqeq: ["warn", "always"],
-    "key-spacing": ["error", { mode: "strict" }]
+    "space-in-parens": ["error", "never"],
+    "space-infix-ops": ["error"],
+    "spaced-comment": ["error", "always"]
   },
   overrides: [
     {
       files: ["*.ts", "*.tsx"],
       rules: {
-        "@typescript-eslint/type-annotation-spacing": "error",
-        "no-unused-vars": ["off"],
-        "@typescript-eslint/no-unused-vars": ["warn"],
         "@typescript-eslint/await-thenable": "error",
         "@typescript-eslint/ban-types": [
           "error",
@@ -61,23 +58,26 @@ module.exports = {
             }
           }
         ],
-        "@typescript-eslint/no-explicit-any": "error",
-        "@typescript-eslint/no-unsafe-return": "error",
-        "@typescript-eslint/explicit-function-return-type": "error",
-        "@typescript-eslint/consistent-type-assertions": "error",
         "@typescript-eslint/class-literal-property-style": "error",
-        "@typescript-eslint/no-floating-promises": "error",
-        "@typescript-eslint/typedef": "error",
+        "@typescript-eslint/consistent-type-assertions": "error",
+        "@typescript-eslint/explicit-function-return-type": "error",
         "@typescript-eslint/member-delimiter-style": ["error", {
           multiline: {
-            delimiter: "comma",
+            delimiter: "none",
             requireLast: false
           },
           singleline: {
             delimiter: "comma",
             requireLast: false
           }
-        }]
+        }],
+        "@typescript-eslint/no-explicit-any": "error",
+        "@typescript-eslint/no-floating-promises": "error",
+        "@typescript-eslint/no-unsafe-return": "error",
+        "@typescript-eslint/no-unused-vars": ["warn"],
+        "@typescript-eslint/type-annotation-spacing": "error",
+        "@typescript-eslint/typedef": "error",
+        "no-unused-vars": ["off"]
       },
       env: {
         node: true
